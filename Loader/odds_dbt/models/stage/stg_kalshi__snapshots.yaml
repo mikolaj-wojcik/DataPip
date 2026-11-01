@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_kalshi__snapshots
+    description: "Cleaned Kalshi market snapshots, one row per ticker per snapshot."
+    columns:
+      - name: snapshot_id
+        tests:
+          - unique
+          - not_null
+      - name: snapshot_time
+        tests:
+          - not_null
+      - name: ticker
+        tests:
+          - not_null

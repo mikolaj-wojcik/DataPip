@@ -1,0 +1,9 @@
+version: 1
+
+sources:
+  - name: raw
+    schema: public
+    tables:
+      - name: market_snapshots
+      - name: aws_retrieval
+        schema: aws_got
